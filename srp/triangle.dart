@@ -1,8 +1,10 @@
 import './shape.dart';
 
 class Triangle extends Shape {
+  double base;
+  double height;
+  Triangle(this.base, this.height);
+
   @override
-  double area() {
-    return 0.0;
-  }
+  double area() => (base * height) / 2;
 }

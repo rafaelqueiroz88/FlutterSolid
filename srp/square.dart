@@ -5,7 +5,5 @@ class Square extends Shape {
   Square(this.size);
 
   @override
-  double area() {
-    return size * size;
-  }
+  double area() => size * size;
 }

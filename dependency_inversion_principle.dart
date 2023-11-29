@@ -1,6 +1,6 @@
 abstract class EncryptionAlgorithm {
   const EncryptionAlgorithm();
-  String encrypt(); // <-- abstraction
+  String encrypt();
 }
 
 class AlgoAES implements EncryptionAlgorithm {
@@ -36,4 +36,5 @@ void main() {
 
   fm.secureFile(AlgoAES());
   fm.secureFile(AlgoRSA());
+  fm.secureFile(AlgoSHA());
 }

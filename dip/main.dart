@@ -6,6 +6,11 @@ import './sha.dart';
 void main() {
   final fm = FileManager();
 
-  fm.secureFile(AlgoAES());
-  fm.secureFile(AlgoRSA());
+  final String aes = fm.secureFile(AlgoAES());
+  final String rsa = fm.secureFile(AlgoRSA());
+  final String sha = fm.secureFile(AlgoSHA());
+
+  print(aes);
+  print(rsa);
+  print(sha);
 }

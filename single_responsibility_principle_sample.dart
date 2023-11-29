@@ -12,11 +12,11 @@ class Shapes {
   }
 
   double circleArea(double r) {
-    return r * 3.1415;
+    return (r * r) * 3.1415;
   }
 
   double triangleArea(double b, double h) {
-    return b * h;
+    return (b * h) / 2;
   }
 
   // Paint to the screen
